@@ -21,7 +21,7 @@ function DownloadForm() {
             });
 
             if (response.data.status === 'success') {
-                setMessage(`Successfully downloaded: ${trackName}`);
+                // setMessage(`Successfully downloaded: ${trackName}`);
                 setFileUrl(response.data.file_url);
             } else {
                 setMessage('Error downloading the song');

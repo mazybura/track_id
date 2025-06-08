@@ -5,6 +5,7 @@ from pydantic import BaseModel
 from server.utils import download_tool
 from fastapi.responses import FileResponse
 import os
+import logging
 
 router = APIRouter()
 download_service = DownloadService()
