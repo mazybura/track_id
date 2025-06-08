@@ -11,7 +11,6 @@ function Waveform({ fileUrl }) {
     useEffect(() => {
         isMounted.current = true;
 
-        // Initialize WaveSurfer once
         if (waveformRef.current && !waveSurferRef.current) {
             waveSurferRef.current = WaveSurfer.create({
                 container: waveformRef.current,
@@ -28,7 +27,6 @@ function Waveform({ fileUrl }) {
             });
         }
 
-        // Load new audio file when fileUrl changes
         if (fileUrl && waveSurferRef.current) {
             waveSurferRef.current.load(fileUrl);
         }

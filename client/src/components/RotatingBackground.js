@@ -16,7 +16,7 @@ function RotatingBackground() {
             const rotateX = ((mouseY - windowHeight / 2) / windowHeight) * 30;
 
             setRotationY(rotateY);
-            setRotationX(rotateX / 5); // Delikatny obrót w osi X dla głębi
+            setRotationX(rotateX / 5);
         };
 
         window.addEventListener("mousemove", handleMouseMove);
@@ -28,7 +28,7 @@ function RotatingBackground() {
     return (
         <div className="background-container">
             <img
-                src="/images/jump.png"  // Ścieżka do obrazka
+                src="/images/jump_logo.png"
                 className="rotating-image"
                 style={{ transform: `rotateY(${rotationY}deg) rotateX(${rotationX}deg)` }}
                 alt="Rotating Background"

@@ -4,37 +4,35 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1100px; /* Maksymalna szerokość formularza */
+  max-width: 1100px;
   background-color: #fff;
-  padding: 10px 20px; /* Zmniejszony padding (wewnętrzne odstępy) formularza */
+  padding: 10px 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 0 auto; /* Wycentrowanie */
-  overflow: hidden; /* Ukrywanie części obrazu */
+  margin: 0 auto;
+  overflow: hidden;
   box-sizing: border-box;
-  height: 200px; /* Ograniczona wysokość formularza */
+  height: 200px;
 }
 
-/* Formularz */
 form {
   flex: 1;
   padding-right: 20px;
-  z-index: 1; /* Formularz ma być wyżej niż obraz */
+  z-index: 1;
 }
 
-/* Obraz po prawej stronie */
 .image-container {
-  width: 240px; /* Zwiększona szerokość obrazu */
+  width: 240px;
   flex-shrink: 0;
-  height: 400px; /* Dopasowana wysokość do formularza */
+  height: 400px;
   margin-left: 50px;
-  overflow: hidden; /* Ukrywanie nadmiaru obrazu */
+  overflow: hidden;
 }
 
 .image-container img {
   width: 120%;
   height: 100%;
-  object-fit: cover; /* Dopasowanie obrazu bez rozciągania */
+  object-fit: cover;
   opacity: 0.9;
   transition: transform 0.3s ease;
 }
@@ -43,25 +41,24 @@ form {
   transform: rotateY(15deg);
 }
 
-/* Styl formularza */
 label {
   font-size: 1rem;
   color: #555;
-  margin-bottom: 5px; /* Zmniejszenie marginesu */
+  margin-bottom: 5px;
 }
 
 input {
-  padding: 8px; /* Zmniejszony padding */
+  padding: 8px;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-bottom: 10px; /* Zmniejszony margines */
+  margin-bottom: 10px;
   width: 100%;
   box-sizing: border-box;
 }
 
 button {
-  padding: 8px; /* Zmniejszony padding */
+  padding: 8px;
   font-size: 1rem;
   font-weight: bold;
   color: #e9ddb5;
@@ -70,7 +67,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 100%; /* Szerokość przycisku na 100% */
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -84,7 +81,6 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* Kontener dla komponentu Waveform */
 .waveform-wrapper {
   width: 100%;
   max-width: 900px;

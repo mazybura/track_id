@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Waveform from './Waveform';  // Import komponentu Waveform
-import './DownloadForm.css'; // Import stylów
+import Waveform from './Waveform';
+import './DownloadForm.css';
 
 function DownloadForm() {
     const [trackName, setTrackName] = useState('');
     const [message, setMessage] = useState('');
     const [fileUrl, setFileUrl] = useState(null);
-    const [isLoading, setIsLoading] = useState(false);  // Stan dla animacji ładowania
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -22,7 +22,7 @@ function DownloadForm() {
 
             if (response.data.status === 'success') {
                 setMessage(`Successfully downloaded: ${trackName}`);
-                setFileUrl(response.data.file_url); // Ustawiamy fileUrl → wtedy Waveform odpali!
+                setFileUrl(response.data.file_url);
             } else {
                 setMessage('Error downloading the song');
             }
@@ -38,7 +38,7 @@ function DownloadForm() {
     return (
         <div>
             <div className="form-container">
-                {/* Formularz po lewej stronie */}
+                { }
                 <form onSubmit={handleSubmit}>
                     <label>
                         Song:
@@ -50,27 +50,27 @@ function DownloadForm() {
                             required
                         />
                     </label>
-                    <button type="submit" disabled={isLoading}> {/* Wyłączanie przycisku podczas ładowania */}
+                    <button type="submit" disabled={isLoading}> { }
                         {isLoading ? 'Downloading...' : 'Download'}
                     </button>
                 </form>
 
-                {/* Obraz po prawej stronie */}
+                { }
                 <div className="image-container">
-                    <img src="\images\jump.png" alt="Jumping Image" />
+                    <img src="\images\jump_logo.png" alt="Jumping Image" />
                 </div>
             </div>
 
             {message && <p>{message}</p>}
 
-            {/* Animacja ładowania */}
+            { }
             {isLoading && (
                 <div className="loader"></div>
             )}
 
-            {/* Użycie komponentu Waveform poza formularzem */}
+            { }
             {fileUrl && (
-                <div className="waveform-wrapper"> {/* Nowy wrapper dla Waveform */}
+                <div className="waveform-wrapper"> { }
                     {fileUrl && <Waveform fileUrl={fileUrl} />}
                 </div>
             )}

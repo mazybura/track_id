@@ -1,29 +1,26 @@
-/* Kontener dla komponentu audio */
 .waveform-wrapper {
   width: 100%;
-  max-width: 900px; /* Maksymalna szerokość komponentu audio */
+  max-width: 900px;
   margin: 20px auto;
   padding: 10px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  display: flex; /* Ustawienie elastycznego układu */
-  align-items: center; /* Wycentrowanie elementów pionowo */
+  display: flex;
+  align-items: center;
 }
 
-/* Styl dla fal dźwiękowych */
 .waveform-container {
-  flex-grow: 1; /* Waveform zajmuje resztę przestrzeni */
+  flex-grow: 1;
   width: 100%;
 }
 
-/* Styl dla przycisku Play/Pause */
 .play-pause-button {
-  width: 80px; /* Kwadratowy kształt */
+  width: 80px;
   height: 80px;
-  background-color: #0b0e17; /* Tło przycisku */
-  color: #e9ddb5; /* Kolor ikony */
+  background-color: #0b0e17;
+  color: #e9ddb5;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -32,7 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 15px; /* Odstęp między przyciskiem a waveform */
+  margin-right: 15px;
   font-size: 2rem;
 }
 
@@ -42,9 +39,9 @@
 }
 
 .play-pause-button i {
-  color: #e9ddb5; /* Kolor ikony */
+  color: #e9ddb5;
 }
 
 .waveform-container div {
-  width: 100%; /* Dopasowanie szerokości do dostępnej przestrzeni */
+  width: 100%;
 }

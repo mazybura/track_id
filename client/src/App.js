@@ -1,6 +1,6 @@
 import React from 'react';
 import DownloadForm from './components/DownloadForm';
-import './App.css'; // Import pliku CSS
+import './App.css';
 
 function App() {
   return (
