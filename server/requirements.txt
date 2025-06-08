@@ -1,3 +1,10 @@
 fastapi
 uvicorn[standard]
 python-multipart
+
+selenium
+webdriver-manager
+
+scrapy
+pandas
+pyarrow

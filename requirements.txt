@@ -1,6 +1,0 @@
-scrapy
-pandas
-pyarrow # TODO: WHY
-selenium
-webdriver-manager
-flask
