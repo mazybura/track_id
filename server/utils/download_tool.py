@@ -7,10 +7,11 @@ import os
 import logging
 from datetime import datetime
 from selenium import webdriver
+from pathlib import Path
 
 
 class Config:
-    download_base_dir = r"C:\Users\micha\Downloads"
+    download_base_dir = str(Path.home() / "Downloads")
 
 
 def setup_logging():
