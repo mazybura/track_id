@@ -4,7 +4,6 @@ venv/
 node_modules
 data
 archive
-out
 *.pyc
 *.crdownload
 *.mp3
