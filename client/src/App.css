@@ -1,0 +1,100 @@
+/* Kontener główny dla całej strony */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ustaw wszystko od góry */
+  align-items: center; /* Wycentruj poziomo */
+  min-height: 100vh; /* Ustaw wysokość na 100% widoku przeglądarki */
+  text-align: left; /* Wyłącz centrowanie tekstu */
+  background-color: #f9f9f9; /* Tło strony (opcjonalne) */
+}
+
+/* Styl nagłówka h1 */
+h1 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center; /* Wycentruj tekst samego nagłówka */
+  margin: 20px 0; /* Dodaj margines u góry */
+}
+
+/* Kontener dla formularza */
+.form-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 900px; /* Maksymalna szerokość formularza */
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden; /* Aby zaokrąglenie działało również na obraz */
+}
+
+/* Lewa część formularza */
+.form-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  text-align: left; /* Etykieta "Song:" po lewej stronie */
+}
+
+input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+button {
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e9ddb5;
+  background-color: #0b0e17;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #e9ddb5;
+  color: #0b0e17;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+p {
+  font-size: 1rem;
+  color: #28a745;
+  margin-top: 20px;
+}
+
+/* Sekcja po prawej stronie z obrazem jako tło */
+.form-image {
+  flex: 1;
+  background-image: url("C:\Users\micha\code\jump_trax\client\public\images\jump.png"); /* Poprawna ścieżka do obrazu */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9; /* Przezroczystość 90% */
+  transition: transform 0.5s ease; /* Płynna animacja przy zmianie */
+  transform-origin: center; /* Obracaj wokół środka */
+}
+
+/* Efekt obracania obrazu podczas najechania kursorem */
+.form-image:hover {
+  transform: rotateY(10deg); /* Lekka rotacja wokół osi Y */
+}

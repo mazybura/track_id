@@ -1,0 +1,21 @@
+/* Kontener na obrazek */
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Obrazek po lewej stronie */
+  z-index: -1; /* Tło pod innymi elementami */
+  pointer-events: none; /* Wyłączenie interakcji z obrazem */
+}
+
+/* Stylizacja obrazka */
+.rotating-image {
+  width: 300px; /* Zmniejszony rozmiar obrazka */
+  height: auto;
+  opacity: 0.8; /* Ustawienie przezroczystości na 80% */
+  transition: transform 0.1s ease-out;
+}

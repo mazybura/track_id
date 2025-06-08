@@ -1,0 +1,97 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px; /* Maksymalna szerokość formularza */
+  background-color: #fff;
+  padding: 10px 20px; /* Zmniejszony padding (wewnętrzne odstępy) formularza */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Wycentrowanie */
+  overflow: hidden; /* Ukrywanie części obrazu */
+  box-sizing: border-box;
+  height: 200px; /* Ograniczona wysokość formularza */
+}
+
+/* Formularz */
+form {
+  flex: 1;
+  padding-right: 20px;
+  z-index: 1; /* Formularz ma być wyżej niż obraz */
+}
+
+/* Obraz po prawej stronie */
+.image-container {
+  width: 240px; /* Zwiększona szerokość obrazu */
+  flex-shrink: 0;
+  height: 400px; /* Dopasowana wysokość do formularza */
+  margin-left: 50px;
+  overflow: hidden; /* Ukrywanie nadmiaru obrazu */
+}
+
+.image-container img {
+  width: 120%;
+  height: 100%;
+  object-fit: cover; /* Dopasowanie obrazu bez rozciągania */
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: rotateY(15deg);
+}
+
+/* Styl formularza */
+label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px; /* Zmniejszenie marginesu */
+}
+
+input {
+  padding: 8px; /* Zmniejszony padding */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px; /* Zmniejszony margines */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px; /* Zmniejszony padding */
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e9ddb5;
+  background-color: #0b0e17;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Szerokość przycisku na 100% */
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #e9ddb5;
+  color: #0b0e17;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Kontener dla komponentu Waveform */
+.waveform-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
