@@ -34,7 +34,7 @@ React - frontend
 
 FastAPI - backend REST API
 
-Selenium — automation of download
+Selenium - automation of download
 
 Scrapy - for scraping track URLs
 
