@@ -5,9 +5,6 @@ from server.utils import download_tool
 from server.services.streaming_service import StreamingService
 
 
-# Setup logowania (jednorazowo przy imporcie)
-
-
 download_tool.setup_logging()
 
 
@@ -16,7 +13,6 @@ class DownloadService:
         self.streaming_service = StreamingService()
 
     def download_track(self, title: str) -> TrackInfo:
-        # Dla endpointu /search — NIE uruchamiamy Selenium (tylko mockujemy URL)
         stream_url = self.streaming_service.get_stream_url(title)
         download_url = f"https://mockdownload.com/{title.replace(' ', '_')}.mp3"
 

@@ -31,8 +31,7 @@ def download_track(request: dict = Body(...)):
     try:
         download_tool.download_song(driver, track_name)
 
-        # Czekamy aż plik się pojawi (polling)
-        timeout = 60  # sekundy
+        timeout = 60
         poll_interval = 2
         elapsed = 0
 
